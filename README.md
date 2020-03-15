@@ -1,5 +1,5 @@
 # modsecurity-layer
-A serverless modsecurity AWS lambda layer. Things are still a little wierd so check the working POC in examples/
+A serverless modsecurity AWS lambda layer. Things are still a little weird so check the working POC in examples/
 
 ## Building
 
