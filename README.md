@@ -1,5 +1,5 @@
 # modsecurity-layer
-A serverless modsecurity AWS lambda layer with OWASP CRS. Check the working POC in examples/
+A serverless modsecurity AWS lambda layer with OWASP CRS. Check the working POC in example/
 
 ## Building
 
