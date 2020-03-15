@@ -26,3 +26,6 @@ make deploy
 ```
 
 ## References
+https://github.com/actions-security/pymodsecurity
+https://modsecurity.org/crs/
+https://github.com/SpiderLabs/ModSecurity
