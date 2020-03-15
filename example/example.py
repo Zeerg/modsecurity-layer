@@ -1,12 +1,13 @@
 import json
 import os
 
+# Mod Sec
+os.environ['LD_LIBRARY_PATH'] = "/opt/lib"
+from ModSecurity import ModSecurity
+from ModSecurity import Rules
+from ModSecurity import Transaction
 
 def modsec(event, context):
-    os.environ['LD_LIBRARY_PATH'] = "/opt/lib"
-    from ModSecurity import ModSecurity
-    from ModSecurity import Rules
-    from ModSecurity import Transaction
     modsec = ModSecurity()
     print(modsec.whoAmI())
     rules = Rules()
