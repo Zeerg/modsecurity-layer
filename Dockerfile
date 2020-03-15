@@ -37,5 +37,9 @@ RUN rm -rf lib/libmodsecurity.so && \
 COPY basic_rules.conf /opt/lib/
 COPY unicode.mapping /opt/lib/
 
+# CRS Works
+RUN git clone https://github.com/SpiderLabs/owasp-modsecurity-crs.git /opt/lib/owasp-modsecurity-crs && \
+    mv /opt/lib/owasp-modsecurity-crs/crs-setup.conf.example /opt/lib/owasp-modsecurity-crs/crs-setup.conf 
+
 # Switch our workdir back to task
 WORKDIR /var/task
