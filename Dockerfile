@@ -34,7 +34,7 @@ RUN rm -rf lib/libmodsecurity.so && \
     mv lib/libmodsecurity.so.${LIBMODSEC_VERSION} lib/libmodsecurity.so.3
 
 # Basic rules and fixing unicode mapping error
-COPY basic_rules.conf /opt/lib/
+COPY modsec.conf /opt/lib/
 COPY unicode.mapping /opt/lib/
 
 # CRS Works
